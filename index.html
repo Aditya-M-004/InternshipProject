@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aditya Molwane — Portfolio</title>
+
+  <!-- Google Fonts (Day 7) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Fixed Header / Navigation -->
+  <header id="site-header" class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="#home" class="logo-link" aria-label="Go to home">Aditya Molwane</a>
+      </div>
+
+      <nav id="main-nav" class="main-nav" role="navigation" aria-label="Main">
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#portfolio">Portfolio</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="nav-cta" href="#contact">Hire Me</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" role="main">
+
+    <!-- Hero / Home Section -->
+    <section id="home" class="hero" aria-label="Home">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1 class="hero-title">Hi, I'm <span class="accent">Aditya Molwane</span></h1>
+          <p class="hero-sub">I build responsive, accessible, and pixel-perfect websites.</p>
+          <p>
+            <a class="btn-primary" href="#portfolio">See my work</a>
+            <a class="btn-ghost" href="#contact">Contact me</a>
+          </p>
+        </div>
+
+        <figure class="hero-figure" aria-hidden="true">
+          <img src="./images/laptop&workspace.avif" alt="Illustration of a laptop and workspace" width="520" height="360">
+        </figure>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about" aria-label="About">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>I'm a front-end developer focusing on responsive design and clean interfaces. I enjoy turning ideas into accessible web experiences.</p>
+            <ul class="about-list">
+              <li>B.E. in Information Technology</li>
+              <li>HTML, CSS (Flexbox / Grid), basic JavaScript</li>
+              <li>Version control: Git & GitHub</li>
+            </ul>
+          </div>
+
+          <div class="about-stats">
+            <div class="stat">
+              <strong>2+</strong>
+              <span>Years experience</span>
+            </div>
+            <div class="stat">
+              <strong>5+</strong>
+              <span>Projects</span>
+            </div>
+            <div class="stat">
+              <strong>Responsive</strong>
+              <span>Desktop • Tablet • Mobile</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section (Grid) -->
+    <section id="portfolio" class="portfolio" aria-label="Portfolio">
+      <div class="container">
+        <h2 class="section-title">Portfolio</h2>
+
+        <div class="projects-grid" aria-live="polite">
+          <article class="project-card">
+            <figure>
+              <img src="./images/ss1.png" alt="Project 1 screenshot" width="600" height="360">
+              <figcaption>
+                <h3>Project 1</h3>
+                <p>Responsive landing page for a product.</p>
+              </figcaption>
+            </figure>
+          </article>
+
+          <article class="project-card">
+            <figure>
+              <img src="./images/ss2.png" alt="Project 2 screenshot" width="600" height="360">
+              <figcaption>
+                <h3>Project 2</h3>
+                <p>Portfolio site with grid gallery.</p>
+              </figcaption>
+            </figure>
+          </article>
+
+          <article class="project-card">
+            <figure>
+              <img src="./images/aa4.png" alt="Project 3 screenshot" width="600" height="360">
+              <figcaption>
+                <h3>Project 3</h3>
+                <p>Interactive UI components demo.</p>
+              </figcaption>
+            </figure>
+          </article>
+
+          <article class="project-card">
+            <figure>
+              <img src="./images/ss3.png" alt="Project 4 screenshot" width="600" height="360">
+              <figcaption>
+                <h3>Project 4</h3>
+                <p>Tinder for Dogs TINDOG.</p>
+              </figcaption>
+            </figure>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact" aria-label="Contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact-grid">
+          <form class="contact-form" action="#" method="post" aria-label="Contact form">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button type="submit" class="btn-primary">Send Message</button>
+          </form>
+
+          <div class="contact-info" aria-hidden="false">
+            <h3>Get in touch</h3>
+            <p>Email: <a href="mailto:aditya1882002@example.com">aditya1882002@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/adityamolwane" target="_blank" rel="noopener">adityamolwane</a></p>
+            <p>GitHub: <a href="https://github.com/Aditya-M-004" target="_blank" rel="noopener">Aditya.M.004</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-left">© <span id="year"></span> Aditya Molwane</div>
+      <div class="footer-right">
+        <a href="#" class="footer-link">Privacy</a>
+        <a href="#" class="footer-link">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // small script just to set the current year (allowed—optional & small)
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
